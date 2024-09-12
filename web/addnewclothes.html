@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Add clothing information</h1>
+        <a href="addnewclothes.html">Add New clothes</a>
+        <h2>add clothes</h2>
+        <form action="addnewclothesservlet2" method="post">
+            <label for="clothesname">name:</label><br>
+            <input type="text" id="clothesname" name="clothesname"><br/>
+            
+            <label for="clothes">clothes</label><br> 
+            <select name="clothes" id="clothes">
+            <option value="t-shirt">t-shirt</option>
+            <option value="coat">coat</option>
+            <option value="tanktop">tank top</option>
+            <option value="suitjacket">suit jacket</option>
+            </select><br/>
+            
+            <label>site:</label><br>
+            <input type="checkbox" id="site1" name="site" value="S">s 
+            <input type="checkbox" id="site2" name="site" value="M">m
+            <input type="checkbox" id="site3" name="site" value="L">l
+            <input type="checkbox" id="site4" name="site" value="XL">xl <br/>
+            
+                        
+            <label>colori:</label><br>
+            <input type="radio" id="color01" name="colori" value="black">
+            <label for="color01">black</label>
+            <input type="radio" id="color02" name="colori" value="white">
+            <label for="color02">white</label>
+            <input type="radio" id="color03" name="colori" value="pink">
+            <label for="color03">pink</label>
+            <input type="radio" id="color04" name="colori" value="blue">
+            <label for="color04">blue</label><br>
+             
+            <label for="clothesprice">price:</label><br/> 
+            <input type="text" id="clothesprice" name="clothesprice"><br/>
+            
+            
+            <input type="submit" value="addclothes">
+        </form>
+    </body>
+</html>
